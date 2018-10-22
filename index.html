@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <title>MarcinGalanty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Macie za zadanie stworzyć prostą stronę WWW o sobie. Strona nie musi mieć "wodotrysków",
+ może być naprawdę minimalistyczna (polecam koncepcję https://material.io/design/). Mam nadzieję, że sukcesywnie będziecie ją wypełniać informacjami.
+Kryteria akceptacji:
+- format single page (bez podstron)
+- favicona (https://realfavicongenerator.net/)
+- minimum 3 sekcje (hero, o mnie, technologię jakie znam)
+- minimum 1 z nich (technologie) powinna być układem kolumn (minimum 3) ułożonych w rzędzie/rzędach na desktopie i pod sobą na mobilce
+- sekcja technologie powinna zawierać minimum logo i opis każdej z nich
+- sekcja o mnie powinna zawierać tekst po lewej stronie a po prawej Wasze zdjęcie na desktopie, na mobilce najpierw zdjęcie a potem tekst
+- menu z linkami do każdej z sekcji - dostosowane również do mobilek
+- do stworzenia responsywności i układów kolumn wykorzystać wyłącznie flexbox
+Za stworzenie strony bez responsywności 1pkt na pocieszenie. Za całość 3pkt.
+Wszystkich punktów do zebrania w czasie kursu będzie około 25-30 (i ich suma to 30% wyniku końcowego). 
+Za trudniejsze zadania (np z Reacta będzie ich więcej). -->
+
+<body>
+<nav class="navigation">
+    <ul class="navigation__menu">
+        <li class="navigation__menu__item">start</li>
+        <li class="navigation__menu__item">o mnie</li>
+        <li class="navigation__menu__item">technologie</li>
+        <li class="navigation__menu__item">współpraca</li>
+    </ul>
+</nav>
+<section class="section-hero">
+    <h2 class="section-hero__headline">
+    MarcinGalanty<br>home page   
+    </h2>
+</section>
+<section class="section-about-me">
+    <div class="section-about-me__text">
+    <h2 class="section-about-me__text__headline">O mnie</h2>
+    <p class="section-about-me__text__content">Witaj. Nazywam się Marcin Galanty i od kilku miesięcy zgłębiam tajniki front-end web developmentu.
+    Zaczynałem swoją przygodę od poznawania podstaw składni html i css. Następnie uczyłem się bardziej zaawansowanych znaczników css. Obecnie pracuję nad udoskonalaniem swojego warsztatu w obsłudze GITa oraz uczę się pracować nad projektem w Scrumie przy pomocy aplikacji jira.
+    Wszystko to odbywa się w ramach bootcampu prowadzonego przez lubelski oddział infoShareAcademy. Masę wiedzy i praktyki otrzymywaną podczas codziennych 8-godzinnych warsztatów trzeba jednak szlifować jeszcze po godzinach w domu. 
+    W codziennej systematycznej pracy z zaangażowaniem rzeczy, które wydawały mi się nie do ogarnięcia stają się coraz bardziej oswajane, a ja coraz peeniej i bardziej swojsko czuję się pisząc kod.  </p>
+    </div>
+    <img src="img/about-me.jpg" alt="Marcin Galanty" class="section-about-me__image">
+</section>
+
+<section class="section-technology">
+    <h2 class="section-technology__headline">Technologie</h2>
+<div class="section-technology__flex-container">
+     <div class="section-technology__flex-container__text">
+        <h2 class="section-technology__flex-container__text__headline">HTML</h2>
+        <p class="section-technology__flex-container__text__content">
+                HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Na przykład treść może być uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub tabel obrazów i danych.
+        </p>
+    </div>  
+    <img src="img/html.png" alt="html icon" class="section-technology__flex-container__image">  
+</div>
+<div class="section-technology__flex-container">
+    <div class="section-technology__flex-container__text">
+        <h2 class="section-technology__flex-container__text__headline">CSS</h2>
+        <p class="section-technology__flex-container__text__content">
+                Cascading Style Sheets, w skrócie CSS) – język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w połączeniu z SGML-em.
+        </p>
+    </div>
+    <img src="img/css.png" alt="css icon" class="section-technology__flex-container__image">
+</div>
+<div class="section-technology__flex-container">
+    <div class="section-technology__flex-container__text">
+        <h2 class="section-technology__flex-container__text__headline">GIT</h2>
+        <p class="section-technology__flex-container__text__content">
+
+                Git – rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako narzędzie wspomagające rozwój jądra Linux. Git stanowi wolne oprogramowanie i został opublikowany na licencji GNU GPL w wersji 2.
+        </p>
+    </div>
+    <img src="img/git.png" alt="git icon" class="section-technology__flex-container__image">
+</div>
+<div class="section-technology__flex-container">
+<div class="section-technology__flex-container__text">
+    <h2 class="section-technology__flex-container__text__headline">Współpraca</h2>
+    <p class="section-technology__flex-container__text__content">
+                W celu nawiązania współpracy proszę o kontakt mailowy na adres <b>marcinfront@gmail.com</b>
+    </p>
+</div>
+<img src="img/wspolpraca.png" alt="git icon" class="section-technology__flex-container__image">
+</div>
+</section>
+
+<footer class="footer">
+    <p class="footer__text">&#169 Marcin Galanty</p>
+</footer>
+
+</body>
+</html>
